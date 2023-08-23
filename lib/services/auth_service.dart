@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_this
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -13,7 +15,7 @@ class AuthService with ChangeNotifier {
   Usuario? usuario;
   bool _autenticando = false;
 
-  final _storage = new FlutterSecureStorage();
+  final _storage = const FlutterSecureStorage();
 
   bool get autenticando => this._autenticando;
   set autenticando(bool valor) {
